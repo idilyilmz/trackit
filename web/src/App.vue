@@ -1,11 +1,12 @@
 <template>
-   <Header />         <!-- optional global header -->
-  <router-view />  
+  <v-app>
+    <Header />
+    <v-main>
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import Header from './components/ui/Header.vue'
-
 </script>
-
-<style scoped></style>
